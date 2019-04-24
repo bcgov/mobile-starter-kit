@@ -74,7 +74,7 @@ For **iOS** use [SwiftLint](https://github.com/realm/SwiftLint); you can find a 
 
  For **Android** ...
 
- TBD
+For **Android** development use the build in mechanics and best practices of Android Studio [Improve your code with lint checks](https://developer.android.com/studio/write/lint).
 
 ### Code Review
 
