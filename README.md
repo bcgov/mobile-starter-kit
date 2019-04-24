@@ -6,6 +6,7 @@ If you're receiving a binary (IPA or APK) from a 3rd party for Enterprise deploy
 
 If you're stuck send up a bat-signal on the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
 
+Also, reach us on RocketChat to check your bundle ID or get developers invited to our iTunes or Enterprise account.
 
 # Introduction
 
@@ -26,6 +27,10 @@ Here we'll go over a few tools, processes, and considerations that that will mak
                 ||----w |
                 ||     ||
 ```
+
+### Developers
+
+Reach out to us on RocketChat (details in the tl;dr) to get iOS developers invited to the iTunes (Public or Enterprise); you won't need such invites if you're doing Android only development.
 
 ### Design (visual or otherwise)
 
@@ -99,36 +104,83 @@ If you're stuck send up a bat-signal on the `#gomobile` channel in [RocketChat](
 
 ## Test
 
-- No culture of unit testing;
-- Recommended to do some sort of testing.
-- Use of LINT recommended; samples rules included.
-- 
+While some platforms / languages have a strong test culture this isn't the case for native mobile applications like iOS and (to a lesser extent) Android, especially in the private sector. In the the BCGov we're setting the bar heigh by expecting developers to write automated tests for their code. While Google can explain all the benefits of automated tests in our Enterprise environment the quick-win is maintainability; You can refactor you code and be confident you're not breaking things and new, less experienced developers, can take over your project with a safety net in place.
+
+* ProTip: If you're getting pressure to cut corners and drop automated tests push back and explain that in an Enterprise environment where applications can be very long lived automated tests are expected. Also, see LINTing above.
 
 ## Deploy
 
-Code Signing
+Polishing your app and shipping it feels like the 20% of the work that takes 80% of the effort. Be cool, you're almost there.
 
-- Crypto export
-- Enterprise
-AirWatch
-Ministry Delegate
+```
+ ____________________________________
+/ I've built my app. I'm ready to go. \
+\ What next?                          /
+ ------------------------------------
+     \
+      \
+       ___
+      (o o)
+     (  V  )
+    /--m-m-
+```
 
-- Public
+Here's the TD;DR on distribution: For iOS you're going you're going to want to have the IPA signed with one of our two BCGov certificates. The first certificate is for public iTunes App Store distributions and the second is for our AirWatch Enterprise App Store. There are conditions where you can avoid signing for our Enterprise App Store, for example, if they're provided by a 3rd-party and users are expecting to trust the 3rd party's certificate.
 
-Google Play
-Apple iTunes Store
+### Code Signing
+
+If you're building an app that complies to run natively on iOS or Android then you'll need to sign your app for production deployment. For Android this means using a `unique` key for your application while for iOS it means producing an IPA signed with either our iTunes App Store or Enterprise certificates.
+
+To sign your compiled binary visit our [Code Signing Service](https://signing-web-devhub-prod.pathfinder.gov.bc.ca/).
+
+**ProTip**
+
+While Google Play makes signing a simple do-it-yourself process its discouraged for a few reasons: If your team looses the signing key then the Google Play version can *not* be updated. Your team will need to remove the app from sale and create a different instance; this will be a really poor experience for your users.
+
+### Exporting Encryption
+
+If you're going to make your app publicly available, either through Google Play or the iTunes App Store and it uses encryption that is **over 63 bytes** then you'll likely need to deal with U.S cryptography export restrictions. Here is some useful reading on the subject:
+
+* [Export Compliance Summary - Google](https://support.google.com/googleplay/android-developer/answer/113770?hl=en)
+
+* [Complying with Encryption Export Regulations - Apple](https://developer.apple.com/documentation/security/complying_with_encryption_export_regulations)
+
+* [Encryption and export license for an App Store or Google Play app](https://stackoverflow.com/questions/30297727/encryption-and-export-license-for-an-app-store-or-google-play-app)
+
+* [Cryptography Export Regulations](https://medium.com/@cossacklabs/apple-export-regulations-on-crypto-6306380682e1)
+
+**ProTip**
+
+Even if you're making your app available in the Canada Region of Google Play or iTunes Store you still need to comply with U.S. export restrictions. This is because both Apple and Google are U.S companies and the app will reside on servers in the U.S. and thus is being `exported` to users in Canada.
+
+### Deployment
+
+You have a few options available to distribute your application to your users:
+
+#### Enterprise
+
+For enterprise deployments we have a private app store called **AirWatch** that is only available to BCGov employees using work phones; this services is commonly referred to as a managed device or MDMS.
+
+Each ministry has a `delegate` who has access to AirWatch and can deploy applications their for your. Please contact the MDMS team to discuss who you AirWatch delegate is.
+
+#### Public 
+
+If you're application is going to be made widely available then your options are the official app stores:
+
+- Google Play
+- Apple iTunes Store
+
+A BCGov employee for your team will be setup as an applicaiton administrator in one or both of the public stores. This will allow you to upload version, track usage, and other administrative tasks.
+
+Reach out to the administrators in the RocketChat `#gomobile` channel to get setup.
+
+### Management
+
 Key management
 Automated Deployment
 App Managers
 
-
-
-
-
 ---
-
-
-
 
 ### How to Contribute
 
