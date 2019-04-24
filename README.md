@@ -39,15 +39,16 @@ A few key considerations right out of the gate are:
 - Look & Feel - Fonts, Colour Pallet, bla; and
 - Bundle ID - Don't go rogue; let us help.
 
-**Language**
+#### Language
 
 The rule of thumb here is choose a language that is well supported and easy to maintain while making it easy for the next developer to follow in your footsteps can support. For iOS roll with Swift (latest) and for Android go with Kotlin. If you're supporting a legacy application in, for example, Objective-C look talk to your product owner and see if can write new features in a more modern language.
 
-**Look & Feel**
+#### Look & Feel
 
 Your design team (and maybe that is just you) should be aware of the Digital Services' [Design System](https://developer.gov.bc.ca/Design-System/About). While it is Web focused many resources such as color pallet, fonts, accessibility, and more are very much applicable to mobile.
 
-* ProTip: The BCGov uses the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font for digital service deliver. Don't use fonts that require a license like *Myriad Pro*
+**ProTip**
+The BCGov uses the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font for digital service deliver. Don't use fonts that require a license like *Myriad Pro*
 
 ### Code Quality
 
@@ -55,7 +56,7 @@ A few key considerations right out of the gate are:
 - LINTing - Code quality and maintainability; and
 - Code Review - Don't code in a cave.
 
-**LINTing**
+#### LINTing
 
 Some languages like JavaScript, for example, have huge cultural momentum behind code quality tools a.k.a LINTers while other languages like Java, Swift and Objective-C its not the case. It is **highly** recommended to use a LINTer in your project; they ensure you're code has a similar look and feel to other BCGov projects.
 
@@ -75,27 +76,29 @@ For **iOS** use [SwiftLint](https://github.com/realm/SwiftLint); you can find a 
 
  TBD
 
-**Code Review**
+#### Code Review
 
 Often the project worked on at the BCGov are small consisting of one developer; if this is your situation there isn't much you can do for code reviews.
 
-* ProTip: Ask in the `#gomobile` RocketChat channel and see if another developer can do code reviews for you.
+**ProTip**
+Ask in the `#gomobile` RocketChat channel and see if another developer can do code reviews for you.
 
 ### Build System
 
-**Android**
+#### Android
 
 It is recommended you leverage the OpenShift environment for automating your builds. You can run *gradle* in a Linux / Maven / Gradel container and run all your necessary tests and builds. For a sample project, check out [SecureImage for Android](https://github.com/bcgov/secure-image-android); this project will build just fine in OpenShift.
 
-**iOS**
+#### iOS
 
 Unlike Android, iOS applications must be build with `Xcode` which only runs on macOS machines. We are in the process of setting up a common build system for iOS projects but for the time being you'll be doing builds on your local machine.
 
-**Hybrid**
+#### Hybrid
 
 When building a hybrid system like **React Native** you'll be writing your business logic in JavaScript but you'll still need the Android SDK and iOS SDK to compile to a native binary. This means you're iOS dependency of `Xcode` on `macOS` will be your pain point and as such you'll likely be building on your local system.
 
-* ProTip: For **iOS, Android and Hybrid** make sure you check out the `Signing` section below for useful tips on deploying your application(s).
+**ProTip**
+For **iOS, Android and Hybrid** make sure you check out the `Signing` section below for useful tips on deploying your application(s).
 
 ### Help
 
@@ -106,7 +109,8 @@ If you're stuck send up a bat-signal on the `#gomobile` channel in [RocketChat](
 
 While some platforms / languages have a strong test culture this isn't the case for native mobile applications like iOS and (to a lesser extent) Android, especially in the private sector. In the the BCGov we're setting the bar heigh by expecting developers to write automated tests for their code. While Google can explain all the benefits of automated tests in our Enterprise environment the quick-win is maintainability; You can refactor you code and be confident you're not breaking things and new, less experienced developers, can take over your project with a safety net in place.
 
-* ProTip: If you're getting pressure to cut corners and drop automated tests push back and explain that in an Enterprise environment where applications can be very long lived automated tests are expected. Also, see LINTing above.
+**ProTip**
+If you're getting pressure to cut corners and drop automated tests push back and explain that in an Enterprise environment where applications can be very long lived automated tests are expected. Also, see LINTing above.
 
 ## Deploy
 
@@ -134,7 +138,6 @@ If you're building an app that complies to run natively on iOS or Android then y
 To sign your compiled binary visit our [Code Signing Service](https://signing-web-devhub-prod.pathfinder.gov.bc.ca/).
 
 **ProTip**
-
 While Google Play makes signing a simple do-it-yourself process its discouraged for a few reasons: If your team looses the signing key then the Google Play version can *not* be updated. Your team will need to remove the app from sale and create a different instance; this will be a really poor experience for your users.
 
 ### Exporting Encryption
@@ -150,7 +153,6 @@ If you're going to make your app publicly available, either through Google Play 
 * [Cryptography Export Regulations](https://medium.com/@cossacklabs/apple-export-regulations-on-crypto-6306380682e1)
 
 **ProTip**
-
 Even if you're making your app available in the Canada Region of Google Play or iTunes Store you still need to comply with U.S. export restrictions. This is because both Apple and Google are U.S companies and the app will reside on servers in the U.S. and thus is being `exported` to users in Canada.
 
 ### Deployment
