@@ -107,6 +107,22 @@ If you're stuck send up a bat-signal on the `#gomobile` channel in [RocketChat](
 
 ## Test
 
+Lets have that awkward conversation about testing.
+
+```
+ _______________________________
+/ I don't test my code but when \
+\ I do - I do it in production. /
+ -------------------------------
+  \
+   \  /  \~~~/  \         
+     (    ..     )----,      
+      \__     __/      \     
+        )|  /)         |\    
+         | /\  /___\   / ^   
+          "-|__|   |__| 
+```
+
 While some platforms / languages have a strong test culture this isn't the case for native mobile applications like iOS and (to a lesser extent) Android, especially in the private sector. In the the BCGov we're setting the bar heigh by expecting developers to write automated tests for their code. While Google can explain all the benefits of automated tests in our Enterprise environment the quick-win is maintainability; You can refactor you code and be confident you're not breaking things and new, less experienced developers, can take over your project with a safety net in place.
 
 **ProTip**
