@@ -176,9 +176,9 @@ Reach out to the administrators in the RocketChat `#gomobile` channel to get set
 
 ### Management
 
-Key management
-Automated Deployment
-App Managers
+Each team is empowered to manage there own application. While some help is required such as: setting up a bundle ID; inviting developers to our developer accounts; signing for public distribution; no team will take ownership of your app.
+
+If you've chosen to manage your own signing key for an Android app keep it safe, don't let it walk out the door, and back it up.
 
 ---
 
