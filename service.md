@@ -2,7 +2,7 @@
 
 ## Service Description
 
-### TL;DR
+### Summary
 
 The BC Government **Team Mobile Services** support native mobile application development through:
 
@@ -15,61 +15,72 @@ This does **not** include access or support to the Enterprise App Store commonly
 
 ### Features & Functions
 
-Users of this service gain access to the following four services.
+Users of this service gain access to the following four services:
 
 #### Mobile Signing
 
-This service allows developers to sigh their iOS applications with our Enterprise or iTunes Store production keys. Onces signed the application manager can distribute the application as they wish.
+This service allows teams to sign their **iOS** applications with our Enterprise or iTunes Store production keys.
 
-When using this service for Android we retains the signing key and ensure its backed up to prevent loss or corruption which would result in the inability to further update your application on Google Play.
+When using this service for **Android** it generates and retains the unique signing key for your application. This method will ensure the key is backed-up to prevent loss or corruption which may result in the inability to further update your application on Google Play.
+
+ Once signed the team's application manager can distribute the application as they wish.
 
 #### Public Stores
 
-We have administrative and agent access to both the iTunes App Store and Google Play Store. We can invite developers as needed and grant the ability to for BC Government employees to be application managers for their team; this allows upload, distribution, and monitoring of metrics.
+We have administrative and agent access to both the iTunes App Store and Google Play Store. We can invite developers as needed and grant the ability to for BC Government employees to be application managers for their team; this allows upload, distribution, and monitoring of metrics for your specific application.
 
 You can also use these services for Beta distribution.
 
 #### Starter Kit
 
-We maintain resources to explain mobile development withing the BC Government. This includes guides to the different tools, workflow, process, and for iOS automated code quality rules; for Android we have recommended best practices.
+We maintain resources to explain mobile development within the BC Government. This includes guides to the different tools, workflow, process, and for iOS automated code quality rules; for Android we have recommended best practices.
+
+#### Community
+
+We encourage a vibrant community of mobile focused developer through the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required). Use your GitHub ID or IDIR to sign-up and join.
+
 
 ### Eligibility & Prerequisites
 
-This service collection is meant for application managers, product owners, and mobile developers.
+This service collection is offered to BC Government development teams building native mobile application for iOS and Android.
 
-To fully maximize access you will need a team member with an IDIR account, RocketChat access, and developers / app managers should have Google and Apple IDs.
+In order to use this service, teams must:
+
+* Nominate a BC Government employee to be the `App Manager`; this person will be able to sign and deploy the app on behalf of the team;
+
+* Developers for iOS will need to provide their Apple ID;
+
+* Developers for Android will need to provide their Google ID.
 
 ### How to Request
 
-The Team Mobile Services providers do not police usage or access providing requests come from BC Government employees and are reasonable. 
+Once a team has read the [Mobile Start Kit](./README.md) to understand the components best practices reach out to Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer; he can be located in the corporate directory. Setup a phone call to discuss your project and talk through the mobile development process. 
 
-Limited access is granted when requested by BC Government employees; requests can not be made by contractors or 3rd-party entities. 
-
-Access to shared services such as Apple iTunes Connect or Google Play is limited to a specific application related to a teams work.
-
-To request access use your IDIR or GitHub ID to join the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
+Subsequent requests can be made by using your IDIR or GitHub ID to join the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
 
 ### Availability 
 
-Automated services are available 24/7 with best effort to restart fails systems during normal business hours M-F 9-5.
+Automated services are available 24/7 with best effort to restart failed systems during normal business hours: Monday to Friday 9an ti 5pm.
 
-Services requiring human innervation are preformed during normal business hours M-F 9-5.
+Services requiring human innervation are preformed during normal business hours: Monday to Friday 9an ti 5pm.
+
 
 ## How do I get help? (help and self service)
 
 ### Getting Help
 
-To request help use your IDIR or GitHub ID to join the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
+To request help use your IDIR or GitHub ID to join the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required).
 
 ## Self-service support
 
-Resources to help you get started include:
-
-* [Code Signing Service](https://signing-web-devhub-prod.pathfinder.gov.bc.ca/)
+Use these self-services resources to educate your team and reach out for further assistance:
 
 * [Mobile Starter Kit](https://github.com/bcgov/mobile-starter-kit)
 
+* [Code Signing Service](https://signing-web-devhub-prod.pathfinder.gov.bc.ca/)
+
 * [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
+
 
 ## What does it Cost?
 
@@ -79,14 +90,11 @@ For you my friend, there are no changes for this these services.
 
 ## Support Roles, Processes, Communications (platform ops)
 
-Our role is to enable you to successfully delivery your application. We don't provide:
- * hands on development services; or
- * code review; or
- * vender management; or
- * security or privacy reviews;
- * etc
+Our role is to enable you to successfully delivery your application by provisioning access to necessary resources or tools fulfilling unique and required task.
 
-RocketChat is the primary mode of communication method. By using it you'll be able to learn about different team members, additional contact information (work email / voice), and escalation methods. We will also use the `#gomobile` channel to post alerts and notifications.
+RocketChat is the primary mode of communication. By using it will learn about different team members, additional contact information (work email / voice), and escalation methods. We will also use the `#gomobile` channel to post alerts and notifications.
+
+For teams without RocketChat access or if you need to talk to a person IRL contact Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer.
 
 
 ## Service Delivery
