@@ -47,7 +47,7 @@ The rule of thumb here is choose a language that is well supported and easy to m
 
 Your design team (and maybe that is just you) should be aware of the Digital Services' [Design System](https://developer.gov.bc.ca/Design-System/About). While it is Web focused many resources such as color pallet, fonts, accessibility, and more are very much applicable to mobile.
 
-**ProTip**
+**Pro Tip**
 The BCGov uses the [Noto Sans](https://fonts.google.com/specimen/Noto+Sans) font for digital service deliver. Don't use fonts that require a license like *Myriad Pro*
 
 ## Code Quality
@@ -80,7 +80,7 @@ For **Android** development use the build in mechanics and best practices of And
 
 Often the project worked on at the BCGov are small consisting of one developer; if this is your situation there isn't much you can do for code reviews.
 
-**ProTip**
+**Pro Tip**
 Ask in the `#gomobile` RocketChat channel and see if another developer can do code reviews for you.
 
 ## Build System
@@ -97,7 +97,7 @@ Unlike Android, iOS applications must be build with `Xcode` which only runs on m
 
 When building a hybrid system like **React Native** you'll be writing your business logic in JavaScript but you'll still need the Android SDK and iOS SDK to compile to a native binary. This means you're iOS dependency of `Xcode` on `macOS` will be your pain point and as such you'll likely be building on your local system.
 
-**ProTip**
+**Pro Tip**
 For **iOS, Android and Hybrid** make sure you check out the `Signing` section below for useful tips on deploying your application(s).
 
 ## Help
@@ -125,7 +125,7 @@ Lets have that awkward conversation about testing.
 
 While some platforms / languages have a strong test culture this isn't the case for native mobile applications like iOS and (to a lesser extent) Android, especially in the private sector. In the the BCGov we're setting the bar heigh by expecting developers to write automated tests for their code. While Google can explain all the benefits of automated tests in our Enterprise environment the quick-win is maintainability; You can refactor you code and be confident you're not breaking things and new, less experienced developers, can take over your project with a safety net in place.
 
-**ProTip**
+**Pro Tip**
 If you're getting pressure to cut corners and drop automated tests push back and explain that in an Enterprise environment where applications can be very long lived automated tests are expected. Also, see LINTing above.
 
 # Deploy
@@ -153,7 +153,7 @@ If you're building an app that complies to run natively on iOS or Android then y
 
 To sign your compiled binary visit our [Code Signing Service](https://signing-web-devhub-prod.pathfinder.gov.bc.ca/).
 
-**ProTip**
+**Pro Tip**
 While Google Play makes signing a simple do-it-yourself process its discouraged for a few reasons: If your team looses the signing key then the Google Play version can *not* be updated. Your team will need to remove the app from sale and create a different instance; this will be a really poor experience for your users.
 
 ## Exporting Encryption
@@ -168,7 +168,7 @@ If you're going to make your app publicly available, either through Google Play 
 
 * [Cryptography Export Regulations](https://medium.com/@cossacklabs/apple-export-regulations-on-crypto-6306380682e1)
 
-**ProTip**
+**Pro Tip**
 Even if you're making your app available in the Canada Region of Google Play or iTunes Store you still need to comply with U.S. export restrictions. This is because both Apple and Google are U.S companies and the app will reside on servers in the U.S. and thus is being `exported` to users in Canada.
 
 ## Deployment
