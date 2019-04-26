@@ -109,6 +109,11 @@ This section is not yet completed.
 * security reviews
 ```
 
+## Postface
+
+There is an Enterprise App Store commonly known as AirWatch. This product is managed by the MDMS team who provide mobile devices to BC Government employees. AirWatch is outside of the scope of this service description. Please contact MDMS to learn more about AirWatch.
+
+
 ---
 
 # How to Contribute
