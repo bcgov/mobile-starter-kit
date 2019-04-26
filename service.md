@@ -29,11 +29,11 @@ When using this service for **Android** it generates and retains the unique sign
 
 We have administrative and agent access to both the iTunes App Store and Google Play Store. We can invite developers as needed and grant the ability to for BC Government employees to be application managers for their team; this allows upload, distribution, and monitoring of metrics for your specific application.
 
-You can also use these services for Beta distribution.
+Public stores can also be used for beta distribution.
 
 #### Starter Kit
 
-We maintain resources to explain mobile development within the BC Government. This includes guides to the different tools, workflow, process, and for iOS automated code quality rules; for Android we have recommended best practices.
+Resources to explain mobile development within the BC Government. This includes guides to the different tools, workflow, process, and for iOS automated code quality rules; for Android there are recommended best practices.
 
 #### Community
 
@@ -46,7 +46,7 @@ This service collection is offered to BC Government development teams building n
 
 In order to use this service, teams must:
 
-* Nominate a BC Government employee to be the `App Manager`; this person will be able to sign and deploy the app on behalf of the team;
+* Nominate a BC Government employee to be the product `App Manager`; this person will be able to sign and deploy the app on behalf of the team;
 
 * Developers for iOS will need to provide their Apple ID;
 
@@ -54,15 +54,15 @@ In order to use this service, teams must:
 
 ### How to Request
 
-Once a team has read the [Mobile Start Kit](./README.md) to understand the components best practices reach out to Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer; he can be located in the corporate directory. Setup a phone call to discuss your project and talk through the mobile development process. 
+Once a team has read the [Mobile Start Kit](./README.md) to understand the components and best practices reach out to Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer; he can be located in the corporate directory. Setup a phone call to discuss your project and talk through the mobile development process. 
 
 Subsequent requests can be made by using your IDIR or GitHub ID to join the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
 
 ### Availability 
 
-Automated services are available 24/7 with best effort to restart failed systems during normal business hours: Monday to Friday 9an ti 5pm.
+Automated services are available 24/7 with best effort to restart failed systems during normal business hours: Monday to Friday 9am to 5pm.
 
-Services requiring human innervation are preformed during normal business hours: Monday to Friday 9an ti 5pm.
+Services requiring human innervation are preformed during normal business hours: Monday to Friday 9am to 5pm.
 
 
 ## How do I get help? (help and self service)
@@ -92,20 +92,22 @@ For you my friend, there are no changes for this these services.
 
 Our role is to enable you to successfully delivery your application by provisioning access to necessary resources or tools fulfilling unique and required task.
 
-RocketChat is the primary mode of communication. By using it will learn about different team members, additional contact information (work email / voice), and escalation methods. We will also use the `#gomobile` channel to post alerts and notifications.
+RocketChat is the primary mode of communication. By using it your team will learn about different teams, project, or tools. RocketChat can also be used to learn additional contact information (work email / voice) as well as escalation methods. We will also use the `#gomobile` channel to post alerts and notifications.
 
 For teams without RocketChat access or if you need to talk to a person IRL contact Todd Wilson, Director of Enterprise DevOps, Office of the Chief Information Officer.
 
 
 ## Service Delivery
 
-TBD 
+This section is not yet completed.
 
+```
 * request workflow(s)
 * change management
 * service improvements
 * service level
 * security reviews
+```
 
 ---
 
