@@ -1,3 +1,9 @@
+---
+description: The Service Definition for the Mobile Starter Kit and related tools.
+title: Service Definition
+author: jleach
+---
+
 # BC Government Team Mobile Services Definition
 
 ## Service Description
