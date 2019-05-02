@@ -1,6 +1,6 @@
 ---
 description: What the Mobile Starter Kit is and how it works.
-title: README
+title: Mobile Starter Kit Overview
 author: jleach
 ---
 
@@ -10,7 +10,7 @@ This resource will help you successfully deliver a mobile (native or hybrid) app
 
 If you're receiving a binary (IPA or APK) from a 3rd party for Enterprise deployment check out the `Signing` section to learn about how an IPA can be re-signed with our Enterprise certificates for AirWatch deployments.
 
-If you're stuck send up a bat-signal on the `#gomobile` channel in [RocketChat](https://reggie.pathfinder.gov.bc.ca/?intention=LOGIN#error=login_required)
+If you're stuck send up a bat-signal on the `#devops-mobile-development` channel in [RocketChat](https://chat.pathfinder.gov.bc.ca)
 
 Also, reach us on RocketChat to check your bundle ID or get developers invited to our iTunes or Enterprise account.
 
