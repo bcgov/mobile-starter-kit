@@ -1,6 +1,7 @@
 ---
 description: What the Mobile Starter Kit is and how it works.
 title: Mobile Starter Kit Overview
+resourceType: Documentation
 author: jleach
 ---
 
