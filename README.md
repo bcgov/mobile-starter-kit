@@ -5,7 +5,9 @@ resourceType: Documentation
 author: jleach
 ---
 
-# TL;DR
+# Mobile Starter Kit Overview
+
+## TL;DR
 
 This resource will help you successfully deliver a mobile (native or hybrid) application. While its recommended to give the document a full read - hunt and peck what you find useful.
 
