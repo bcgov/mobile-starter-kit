@@ -5,6 +5,8 @@ resourceType: Documentation
 author: jleach
 ---
 
+# THIS IS ARCHIVED - REFER TO [mobile-developer-guide](https://developer.gov.bc.ca/docs/default/component/mobile-developer-guide) INSTEAD.
+
 # Mobile Starter Kit Overview
 
 ## TL;DR
